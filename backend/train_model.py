@@ -40,7 +40,8 @@ print(classification_report(y_test, y_pred))
 
 # Simpan model dan vectorizer
 os.makedirs("model", exist_ok=True)
-joblib.dump(pipeline.named_steps["classifier"], "model/model.pkl")
-joblib.dump(pipeline.named_steps["vectorizer"], "model/vectorizer.pkl")
+# joblib.dump(pipeline.named_steps["classifier"], "model/model.pkl")
+# joblib.dump(pipeline.named_steps["vectorizer"], "model/vectorizer.pkl")
+joblib.dump(pipeline, "model/pipeline.pkl")
 
 print("✅ Model dan vectorizer berhasil disimpan ke folder 'model'")

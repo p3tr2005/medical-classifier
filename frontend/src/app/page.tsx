@@ -12,9 +12,9 @@ function App() {
             <section className="w-full h-[800px] bg-primary">
                 <header className="w-full h-20 absolute top-0 left-0 bg-white px-8 flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                        <Profile placeholder="E" />
+                        <Profile placeholder="M" />
 
-                        <p className="font-semibold">BOT Prediksi Kategori Penyakit</p>
+                        <p className="font-semibold">MediBot</p>
                         <Badge className="bg-[#155dfc] text-white flex items-center gap-2" variant="outline">
                             <BadgeCheck />
                             verified

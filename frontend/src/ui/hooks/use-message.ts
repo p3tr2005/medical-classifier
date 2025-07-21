@@ -29,7 +29,8 @@ export function NewMessage(value: string, role: Role): Message {
 
 export const useMessage = create<State>((set) => ({
     messages: [
-        NewMessage("Paste deskripsi penyakit", Role.Bot),
+        NewMessage("teks medis yang ingin diklasifikasi", Role.Bot),
+        NewMessage("jenis spesialisasi dokter atau kategori penyakit utama", Role.Bot),
     ],
     add_message: (message) => set((state) => ({ messages: [...state.messages, message] })),
     delete_message: (message_id) => set((state) => ({ messages: state.messages.filter(msg => msg.id !== message_id) })),
