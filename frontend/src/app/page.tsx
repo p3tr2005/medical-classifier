@@ -5,12 +5,13 @@ import { Badge } from "@ui/components/badge"
 import { BadgeCheck, EllipsisVertical, Search } from "lucide-react"
 import MessageBox from "@/ui/components/input-box"
 import MessageContainer from "@/ui/components/message-container"
+import { ModeToggle } from "@/ui/components/theme-btn"
 
 function App() {
     return (
         <main className="w-[70%] h-[800px] m-auto mt-24 rounded-md relative">
             <section className="w-full h-[800px] bg-primary">
-                <header className="w-full h-20 absolute top-0 left-0 bg-white px-8 flex items-center justify-between">
+                <header className="w-full h-20 absolute top-0 left-0 bg-white dark:bg-zinc-900 px-8 flex items-center justify-between">
                     <div className="flex items-center gap-4">
                         <Profile placeholder="M" />
 
@@ -23,7 +24,7 @@ function App() {
 
                     <div className="flex items-center gap-4">
                         <Search />
-                        <EllipsisVertical />
+                        <ModeToggle />
                     </div>
                 </header>
 

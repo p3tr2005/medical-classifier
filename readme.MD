@@ -8,9 +8,8 @@ Web aplikasi berbasis Machine Learning yang dapat memprediksi **kategori spesial
 
 - 🧠 **Prediksi Kategori Medis**: Menentukan spesialisasi medis seperti *Cardiology*, *Radiology*, *Surgery*, dll. berdasarkan teks input.
 - ⚙️ **Machine Learning**: Menggunakan model TF-IDF + Naive Bayes yang dilatih dari dataset *MTSamples*.
-- 🌐 **Frontend**: Dibangun dengan Next.js untuk antarmuka yang cepat dan interaktif.
+- 🌐 **Frontend**: Dibangun dengan Next.js untuk UI .
 - 🔥 **Backend API**: Menggunakan Flask untuk menangani prediksi berbasis model ML.
-- 📦 **Tanpa Backend Python di Frontend**: Semua komunikasi dilakukan melalui REST API Flask.
 
 ---
 

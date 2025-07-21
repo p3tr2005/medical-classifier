@@ -19,6 +19,8 @@ function InputBox() {
         //TODO: Sent message to the model
         setIsLoading(true)
 
+        addMessage(NewMessage(value, Role.User))
+
         try {
             const category = await classifyMedicalText(value);
 
@@ -28,6 +30,7 @@ function InputBox() {
             }
 
             addMessage(NewMessage(category, Role.Bot))
+
             toast.success("Success");
         } catch (err) {
             setIsError(true)
@@ -40,7 +43,7 @@ function InputBox() {
     }
 
     return (
-        <footer className="w-full h-20 px-8 bg-white absolute bottom-0 left-0 flex items-center justify-between gap-4">
+        <footer className="w-full h-20 px-8 bg-white dark:bg-zinc-900 absolute bottom-0 left-0 flex items-center justify-between gap-4">
             <Input disabled={isLoading} onChange={(e) => setMessage(e.target.value)} value={message} placeholder="type disease" className="bg-stone-50" />
 
             <Button disabled={isLoading} type="button" onClick={() => onPressedSentMessage(message)} className="bg-btn-primary text-white rounded-full hover:opacity-70" size="lg" variant="default">

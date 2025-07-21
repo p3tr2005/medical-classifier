@@ -8,7 +8,7 @@ export default function RootLayout({
 }: Readonly<PropsWithChildren>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body>
+            <body className="dark:bg-zinc-700">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="light"
