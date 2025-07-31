@@ -2,6 +2,8 @@
 
 Web aplikasi berbasis Machine Learning yang dapat memprediksi **kategori spesialisasi medis** berdasarkan teks transkripsi atau deskripsi medis.
 
+<img width="977" height="447" alt="chart_flow_ML" src="https://github.com/user-attachments/assets/acee3954-acbd-4e1f-b0d4-8c71a8b09d5f" />
+
 ---
 
 ## 📌 Fitur Utama
