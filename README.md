@@ -27,8 +27,8 @@ Web aplikasi berbasis Machine Learning yang dapat memprediksi **kategori spesial
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/p3tr2005/medical-classifier
-cd medical-specialty-classifier
 
+cd medical-specialty-classifier
 
 cd backend
 
@@ -45,6 +45,7 @@ flask run
 cd ../frontend
 
 npm install
+
 npm run dev
 ```
 
